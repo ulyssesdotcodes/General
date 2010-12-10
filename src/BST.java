@@ -5,6 +5,7 @@ import java.util.Random;
 public class BST<T> {
 	private Node<T> root;
 	private Comparator<? super T> cmp;
+	int i;
 	
 	private static class Node<T>{
 		T key;
