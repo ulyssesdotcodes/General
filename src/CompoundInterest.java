@@ -37,7 +37,7 @@ public class CompoundInterest {
 	}
 	
 	public static double computeDailyInterest(double principle, double current, Calendar startDate){
-		double interest = Math.pow(Math.E, (Math.log(current)-Math.log(principle))/monthsBetween(startDate, Calendar.getInstance())) - 1;
+		double interest = Math.pow(Math.E, (Math.log(current)-Math.log(principle))/daysBetween(startDate, Calendar.getInstance())) - 1;
 		return interest;
 	}
 	
